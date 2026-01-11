@@ -45,7 +45,7 @@
                 <&macro_tap>,
                 <&kp ENTER>,
                 <&macro_release>,
-                <&kp LEFT_ALT>;
+                <&kp RIGHT_ALT>;
 
             label = "ENTER_ALT";
         };
