@@ -32,6 +32,7 @@
             bindings =
                 <&macro_tap>,
                 <&kp ESCAPE>,
+                <&macro_wait_time 100>,
                 <&macro_release>,
                 <&kp RIGHT_ALT>;
 
@@ -44,6 +45,7 @@
             bindings =
                 <&macro_tap>,
                 <&kp ENTER>,
+                <&macro_wait_time 100>,
                 <&macro_release>,
                 <&kp RIGHT_ALT>;
 
