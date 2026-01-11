@@ -89,11 +89,11 @@
 
         layer_alttab {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                                           &trans  &trans       &trans        &trans    &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                           &trans  &home_altup  &kp RIGHT     &kp LEFT  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans      &trans       &altup          &trans  &kp DOWN     &kp UP_ARROW  &altup    &kp END  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &kp TAB                      &trans  &trans       &trans        &trans    &trans   &trans
-        &trans  &trans  &trans  &trans          &trans  &trans  &trans      &home_altup  &trans  &trans          &trans       &trans        &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                              &trans  &trans       &trans     &trans    &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                              &trans  &home_altup  &kp RIGHT  &kp LEFT  &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans      &trans       &kp RIGHT          &trans  &kp RIGHT    &kp LEFT   &altup    &home_altup  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &altup                          &trans  &trans       &trans     &trans    &trans       &trans
+        &trans  &trans  &trans  &trans          &trans  &trans  &trans      &home_altup  &trans     &trans          &trans       &trans     &trans    &trans
             >;
         };
 
