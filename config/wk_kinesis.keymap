@@ -25,7 +25,7 @@
                 <&macro_press>,
                 <&kp RIGHT_ALT>,
                 <&macro_tap>,
-                <&kp TAB &to 4>;
+                <&kp TAB &to 5>;
 
             label = "ENTER_";
         };
@@ -83,7 +83,11 @@
         sel_home: sel {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_SHIFT>, <&macro_tap>, <&tog 5>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp HOME &tog 4>;
 
             label = "SEL";
         };
@@ -133,16 +137,6 @@
             >;
         };
 
-        layer_alttab {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans        &trans                                                               &trans  &trans     &trans    &trans  &trans       &trans
-&trans  &trans  &trans  &trans  &trans        &trans                                                               &trans  &trans     &trans    &trans  &trans       &trans
-&trans  &trans  &trans  &trans  &exit_wintab  &trans          &trans  &trans      &trans       &exit_meta          &trans  &kp RIGHT  &kp LEFT  &altup  &home_altup  &trans
-&trans  &trans  &trans  &trans  &trans        &trans                  &trans      &altup                           &trans  &trans     &trans    &trans  &trans       &trans
-        &trans  &trans  &trans  &trans                &trans  &trans  &trans      &home_altup  &trans      &trans          &trans     &trans    &trans  &trans
-            >;
-        };
-
         layer_sel {
             bindings = <
 &trans          &trans  &trans  &trans  &trans  &trans                                                      &trans  &trans  &trans  &trans  &trans  &trans
@@ -150,6 +144,16 @@
 &backspace_sel  &trans  &trans  &trans  &trans  &trans          &trans  &trans      &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans          &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_alttab {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans        &trans                                                               &trans  &trans     &trans    &trans  &trans       &trans
+&trans  &trans  &trans  &trans  &trans        &trans                                                               &trans  &trans     &trans    &trans  &trans       &trans
+&trans  &trans  &trans  &trans  &exit_wintab  &trans          &trans  &trans      &trans       &exit_meta          &trans  &kp RIGHT  &kp LEFT  &altup  &home_altup  &trans
+&trans  &trans  &trans  &trans  &trans        &trans                  &trans      &altup                           &trans  &trans     &trans    &trans  &trans       &trans
+        &trans  &trans  &trans  &trans                &trans  &trans  &trans      &home_altup  &trans      &trans          &trans     &trans    &trans  &trans
             >;
         };
 
