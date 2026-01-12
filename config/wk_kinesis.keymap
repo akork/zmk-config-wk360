@@ -25,7 +25,7 @@
                 <&macro_press>,
                 <&kp RIGHT_ALT>,
                 <&macro_tap>,
-                <&kp TAB &to 3>;
+                <&kp TAB &to 4>;
 
             label = "ENTER_";
         };
@@ -61,7 +61,7 @@
             bindings = <
 &bootloader    &kp N1     &kp N2    &kp N3        &kp N4  &kp N5                                                                                &kp N6  &kp N7  &kp N8         &kp N9         &kp N0     &kp MINUS
 &kp TAB        &kp Q      &kp W     &kp E         &kp R   &kp T                                                                                 &kp Y   &kp U   &kp I          &kp O          &kp P      &kp LEFT_BRACKET
-&kp BACKSPACE  &kp A      &kp S     &kp D         &kp F   &kp G          &kp LEFT_ARROW  &kp RIGHT          &bootloader  &alt_tab_              &kp H   &kp J   &kp K          &kp L          &kp SEMI   &kp SQT
+&kp BACKSPACE  &kp A      &kp S     &kp D         &kp F   &kp G          &kp LEFT_ARROW  &kp RIGHT          &bootloader  &sl 3                  &kp H   &kp J   &kp K          &kp L          &kp SEMI   &kp SQT
 &kp LSHFT      &kp Z      &kp X     &kp C         &kp V   &kp B                          &kp PG_UP          &kp ENTER                           &kp N   &kp M   &kp COMMA      &kp DOT        &kp FSLH   &kp RSHFT
                &kp LCTRL  &kp LWIN  &kp LEFT_ALT  &mo 1           &sl 1  &sl 2           &kp PAGE_DOWN      &kp ESCAPE   &kp SPACE  &sk LSHIFT          &mo 2   &kp RIGHT_ALT  &kp RIGHT_WIN  &kp RCTRL
             >;
@@ -87,23 +87,23 @@
             >;
         };
 
-        layer_alttab {
+        layer_meta {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                                              &trans  &trans       &trans     &trans    &trans       &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                              &trans  &home_altup  &kp RIGHT  &kp LEFT  &trans       &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans      &trans       &kp RIGHT          &trans  &kp RIGHT    &kp LEFT   &altup    &home_altup  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &altup                          &trans  &trans       &trans     &trans    &trans       &trans
-        &trans  &trans  &trans  &trans          &trans  &trans  &trans      &home_altup  &trans     &trans          &trans       &trans     &trans    &trans
+&trans  &kp A   &trans  &trans  &trans  &trans                                                      &trans  &trans     &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                      &trans  &trans     &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans      &trans  &trans          &trans  &alt_tab_  &trans  &kp LC(L)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans     &trans  &trans     &trans  &trans
+        &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans     &trans  &trans     &trans
             >;
         };
 
-        layer_4 {
+        layer_alttab {
             bindings = <
-&trans  &kp A   &trans  &trans  &trans  &trans                                                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans      &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                              &trans  &trans     &trans    &trans  &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                              &trans  &trans     &trans    &trans  &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans      &trans       &kp RIGHT          &trans  &kp RIGHT  &kp LEFT  &altup  &home_altup  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &altup                          &trans  &trans     &trans    &trans  &trans       &trans
+        &trans  &trans  &trans  &trans          &trans  &trans  &trans      &home_altup  &trans     &trans          &trans     &trans    &trans  &trans
             >;
         };
 
