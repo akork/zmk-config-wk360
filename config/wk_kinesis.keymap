@@ -67,6 +67,26 @@
 
             label = "EXIT_META";
         };
+
+        backspace_sel: backspace_sel {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_release>,
+                <&kp LEFT_SHIFT>,
+                <&macro_tap>,
+                <&kp BACKSPACE &to 0>;
+
+            label = "BACKSPACE_SEL";
+        };
+
+        sel_home: sel {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LEFT_SHIFT>, <&macro_tap>, <&tog 5>;
+
+            label = "SEL";
+        };
     };
 
     keymap {
@@ -95,10 +115,10 @@
 
         layer_num {
             bindings = <
-&trans  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4                                                      &trans         &trans        &trans        &trans        &trans        &trans
-&trans  &trans          &trans        &trans        &rgb_ug RGB_TOG  &trans                                                            &kp N8         &kp N9        &kp N0        &kp NUMBER_5  &kp NUMBER_6  &trans
-&trans  &bt BT_CLR_ALL  &trans        &trans        &trans           &trans                &trans  &trans      &trans  &trans          &kp N7         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans
-&trans  &trans          &trans        &bt BT_CLR    &trans           &trans                        &trans      &trans                  &kp LS(EQUAL)  &kp EQUAL     &trans        &trans        &trans        &trans
+&trans  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4                                                      &trans         &trans        &trans        &trans        &trans         &trans
+&trans  &trans          &trans        &trans        &rgb_ug RGB_TOG  &trans                                                            &kp N8         &kp N9        &kp N0        &kp NUMBER_5  &kp NUMBER_6   &trans
+&trans  &bt BT_CLR_ALL  &trans        &trans        &trans           &trans                &trans  &trans      &trans  &trans          &kp N7         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &trans
+&trans  &trans          &trans        &bt BT_CLR    &trans           &trans                        &trans      &trans                  &kp LS(EQUAL)  &kp EQUAL     &trans        &trans        &kp BACKSLASH  &trans
         &trans          &trans        &trans        &trans                         &trans  &trans  &trans      &trans  &trans  &trans                 &trans        &trans        &trans        &trans
             >;
         };
@@ -123,13 +143,13 @@
             >;
         };
 
-        layer_5 {
+        layer_sel {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans      &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans                                                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans                                                      &trans  &trans  &trans  &trans  &trans  &trans
+&backspace_sel  &trans  &trans  &trans  &trans  &trans          &trans  &trans      &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans
             >;
         };
 
