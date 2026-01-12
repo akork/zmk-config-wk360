@@ -51,6 +51,22 @@
 
             label = "ENTER_ALT";
         };
+
+        exit_wintab: exit_wintab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&home_altup &kp LG(TAB)>;
+
+            label = "EXIT_WINTAB";
+        };
+
+        exit_meta: exit_meta {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&home_altup &sl 3>;
+
+            label = "EXIT_META";
+        };
     };
 
     keymap {
@@ -99,11 +115,11 @@
 
         layer_alttab {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                                              &trans  &trans     &trans    &trans  &trans       &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                              &trans  &trans     &trans    &trans  &trans       &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans      &trans       &kp RIGHT          &trans  &kp RIGHT  &kp LEFT  &altup  &home_altup  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &altup                          &trans  &trans     &trans    &trans  &trans       &trans
-        &trans  &trans  &trans  &trans          &trans  &trans  &trans      &home_altup  &trans     &trans          &trans     &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans        &trans                                                               &trans  &trans     &trans    &trans  &trans       &trans
+&trans  &trans  &trans  &trans  &trans        &trans                                                               &trans  &trans     &trans    &trans  &trans       &trans
+&trans  &trans  &trans  &trans  &exit_wintab  &trans          &trans  &trans      &trans       &exit_meta          &trans  &kp RIGHT  &kp LEFT  &altup  &home_altup  &trans
+&trans  &trans  &trans  &trans  &trans        &trans                  &trans      &altup                           &trans  &trans     &trans    &trans  &trans       &trans
+        &trans  &trans  &trans  &trans                &trans  &trans  &trans      &home_altup  &trans      &trans          &trans     &trans    &trans  &trans
             >;
         };
 
