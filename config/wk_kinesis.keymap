@@ -23,7 +23,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp RIGHT_ALT>,
+                <&kp LEFT_ALT>,
                 <&macro_tap>,
                 <&kp TAB &to 5>;
 
@@ -37,7 +37,7 @@
                 <&macro_tap>,
                 <&kp HOME>,
                 <&macro_release>,
-                <&kp RIGHT_ALT>,
+                <&kp LALT>,
                 <&macro_tap>,
                 <&to 0>;
 
@@ -47,7 +47,7 @@
         altup: enter_alt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_release>, <&kp RIGHT_ALT>, <&macro_tap>, <&to 0>;
+            bindings = <&macro_release>, <&kp LEFT_ALT>, <&macro_tap>, <&to 0>;
 
             label = "ENTER_ALT";
         };
