@@ -141,11 +141,11 @@
 
         layer_move {
             bindings = <
-&trans  &kp LC(LS(NUMBER_1))  &kp LS(LC(NUMBER_2))  &trans  &trans  &trans                                                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                &trans                &trans  &trans  &trans                                                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                &trans                &trans  &trans  &trans          &trans  &trans      &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                &trans                &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans                &trans                &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans
+&trans  &kp LC(LS(NUMBER_1))  &kp LS(LC(NUMBER_2))  &kp LS(LC(NUMBER_3))  &kp LS(LC(NUMBER_4))  &kp LS(LC(NUMBER_5))                                                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                &trans                &trans                &trans                &trans                                                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                &trans                &trans                &trans                &trans                        &trans  &trans      &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                &trans                &trans                &trans                &trans                                &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans                &trans                &trans                &trans                                      &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans
             >;
         };
 
