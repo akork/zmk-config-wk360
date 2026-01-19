@@ -174,7 +174,7 @@
         compatible = "zmk,conditional-layers";
 
         move {
-            if-layers = <3 2>;
+            if-layers = <2 1>;
             then-layer = <4>;
         };
     };
