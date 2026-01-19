@@ -111,18 +111,18 @@
 
         layer_num {
             bindings = <
-&trans  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4                                                      &trans          &kp NUMBER_7  &kp NUMBER_8  &kp N9        &trans         &trans
-&trans  &trans          &trans        &trans        &rgb_ug RGB_TOG  &trans                                                            &kp MINUS       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS       &kp EQUAL
-&trans  &bt BT_CLR_ALL  &trans        &trans        &trans           &trans                &trans  &trans      &trans  &trans          &kp UNDERSCORE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0         &trans
-&trans  &trans          &trans        &bt BT_CLR    &trans           &trans                        &trans      &trans                  &trans          &trans        &trans        &trans        &kp BACKSLASH  &trans
-        &trans          &trans        &trans        &trans                         &trans  &trans  &trans      &trans  &trans  &trans                  &trans        &trans        &trans        &trans
+&trans  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(N5)                                                      &trans          &kp NUMBER_7  &kp NUMBER_8  &kp N9        &trans         &trans
+&trans  &trans            &trans            &trans            &rgb_ug RGB_TOG   &trans                                                          &kp MINUS       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS       &kp EQUAL
+&trans  &bt BT_CLR_ALL    &trans            &trans            &trans            &trans              &trans  &trans      &trans  &trans          &kp UNDERSCORE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0         &trans
+&trans  &trans            &trans            &bt BT_CLR        &trans            &trans                      &trans      &trans                  &trans          &trans        &trans        &trans        &kp BACKSLASH  &trans
+        &trans            &trans            &trans            &trans                        &trans  &trans  &trans      &trans  &trans  &trans                  &trans        &trans        &trans        &trans
             >;
         };
 
         layer_meta {
             bindings = <
 &trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)                                                      &kp LG(NUMBER_6)  &kp LG(NUMBER_7)  &kp LG(NUMBER_8)  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)  &trans
-&trans  &trans            &trans            &trans            &kp LC(R)         &trans                                                                &trans            &trans            &kp RC(TAB)       &kp LC(LS(TAB))   &trans            &trans
+&trans  &trans            &kp LC(W)         &trans            &kp LC(R)         &kp LC(T)                                                             &trans            &trans            &kp RC(TAB)       &kp LC(LS(TAB))   &trans            &trans
 &trans  &trans            &trans            &trans            &trans            &trans                    &trans  &trans      &trans  &trans          &trans            &alt_tab_         &trans            &kp LC(L)         &trans            &trans
 &trans  &trans            &kp LG(X)         &trans            &trans            &trans                            &trans      &trans                  &trans            &trans            &trans            &trans            &trans            &trans
         &trans            &trans            &trans            &trans                              &trans  &trans  &trans      &trans  &trans  &trans                    &trans            &trans            &trans            &trans
@@ -161,11 +161,11 @@
 
         layer_alttab {
             bindings = <
-&trans  &trans  &trans  &trans  &trans        &trans                                                               &trans  &trans     &trans    &trans  &trans       &trans
-&trans  &trans  &trans  &trans  &trans        &trans                                                               &trans  &trans     &trans    &trans  &trans       &trans
-&trans  &trans  &trans  &trans  &exit_wintab  &trans          &trans  &trans      &trans       &exit_meta          &trans  &kp RIGHT  &kp LEFT  &altup  &home_altup  &trans
-&trans  &trans  &trans  &trans  &trans        &trans                  &trans      &altup                           &trans  &trans     &trans    &trans  &trans       &trans
-        &trans  &trans  &trans  &trans                &trans  &trans  &trans      &home_altup  &trans      &trans          &trans     &trans    &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1    &trans  &trans        &trans                                                               &trans  &trans     &trans    &trans  &trans       &trans
+&trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans  &trans        &trans                                                               &trans  &trans     &trans    &trans  &trans       &trans
+&trans  &trans        &trans          &trans  &exit_wintab  &trans          &trans  &trans      &trans       &exit_meta          &trans  &kp RIGHT  &kp LEFT  &altup  &home_altup  &trans
+&trans  &trans        &trans          &trans  &trans        &trans                  &trans      &altup                           &trans  &trans     &trans    &trans  &trans       &trans
+        &trans        &trans          &trans  &trans                &trans  &trans  &trans      &home_altup  &trans      &trans          &trans     &trans    &trans  &trans
             >;
         };
     };
